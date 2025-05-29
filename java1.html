@@ -1,0 +1,20 @@
+<html>
+    <head><title>java</title>
+    </head>
+    <body>
+        <input type="number" name="nick0" placeholder="number 1"><br>
+        <input type="number" name="nick1" placeholder="number 2"><br>
+        <input type="number" name="nick2" placeholder="number 3"><br>
+        <input type="button" value="Click me" onclick="nick()">
+         <div id="result" style="margin-top:10px; font-weight:bold;"></div>
+        <script>
+            function nick(){
+                var num0 = document.getElementsByName('nick0')[0].value;
+                var num1 = document.getElementsByName('nick1')[0].value;
+                var num2 = document.getElementsByName('nick2')[0].value;
+                var sum = (Number(num0) || 0) + (Number(num1) || 0) + (Number(num2) || 0);
+                document.getElementById('result').innerText = 'Sum: ' + sum;
+            }
+            </script>
+    </body>
+</html>
